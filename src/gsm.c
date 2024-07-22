@@ -110,7 +110,7 @@ void PrepareGSM(char *cmdline)
         gGSMVMode = 2;                                    // Change to PAL instead.
 #endif
 
-    k576p_fix = 0;
+    k576p_fix = 1;
     kGsDxDyOffsetSupported = 0;
     if ((fd = open("rom0:ROMVER", O_RDONLY)) >= 0) {
         // Read ROM version
